@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Debela Guye Mining | Dolomite, MgCO₃ & MgO Supply from Ethiopia</title>
+  <meta name="description" content="Supplier of Dolomite, Magnesite (MgCO₃), and Magnesium Oxide (MgO) from Ethiopia to global industries. Reliable mining, quality minerals, worldwide shipping.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #206c49;
+      --secondary: #e0bf6e;
+      --bg: #f8f5f1;
+      --text: #222;
+      --accent: #3a8c6e;
+      --white: #fff;
+      --shadow: 0 2px 12px rgba(0,0,0,0.07);
+      --overlay: rgba(32,108,73,0.72);
+    }
+    html { scroll-behavior: smooth; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary);
+      color: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+      box-shadow: var(--shadow);
+    }
+    nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.2rem;
+      flex-wrap: wrap;
+      position: relative;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--white);
+      text-shadow: 0 2px 12px #206c4920;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.1rem;
+    }
+    .nav-links a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+      letter-spacing: 1px;
+      font-size: 1.05rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 1.2rem;
+      transition: background 0.2s, color 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      background: var(--secondary);
+      color: var(--primary);
+    }
+    .menu-btn {
+      display: none;
+      font-size: 1.7rem;
+      background: none;
+      border: none;
+      color: var(--white);
+      cursor: pointer;
+    }
+    .hero {
+      background: linear-gradient(var(--overlay), var(--overlay)),
+        url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      color: #fff;
+      min-height: 410px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3.4rem 1.2rem 2.4rem 1.2rem;
+      border-radius: 0 0 2rem 2rem;
+      box-shadow: 0 4px 24px #00000013;
+      position: relative;
+      animation: fadeIn 1.2s;
+      gap: 2rem;
+    }
+    @keyframes fadeIn { 0% { opacity: 0; transform: translateY(-10px);} 100% { opacity: 1; transform: translateY(0);} }
+    .hero-text {
+      flex: 1 1 340px;
+      min-width: 260px;
+      z-index: 1;
+    }
+    .hero-text h1 {
+      font-size: 2.6rem;
+      margin-bottom: 1rem;
+      color: #fff;
+      text-shadow: 0 2px 8px #206c4932;
+    }
+    .hero-text p {
+      font-size: 1.13rem;
+      margin-bottom: 2rem;
+      color: #f8f5f1;
+    }
+    .cta-btn {
+      background: var(--secondary);
+      color: var(--primary);
+      padding: 0.87rem 2rem;
+      font-size: 1.09rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 2rem;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+      transition: background 0.2s, color 0.2s;
+    }
+    .cta-btn:hover { background: var(--accent); color: var(--white);}
+    .hero-img {
+      flex: 1 1 300px;
+      min-width: 220px;
+      text-align: center;
+      z-index: 1;
+    }
+    .hero-img svg {
+      max-width: 260px;
+      width: 82%;
+      height: auto;
+      filter: drop-shadow(0 2px 12px #00000013);
+    }
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2.5rem 1.2rem 0 1.2rem;
+      scroll-margin-top: 72px;
+    }
+    .section-title {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-shadow: 0 1px 5px #206c4913;
+      position: relative;
+      transition: color 0.2s;
+    }
+    .products {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .product-card {
+      background: var(--white);
+      border-radius: 1.2rem;
+      box-shadow: var(--shadow);
+      flex: 1 1 320px;
+      min-width: 260px;
+      padding: 1.7rem 1.2rem;
+      margin-bottom: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      border-left: 8px solid var(--secondary);
+      animation: fadeInUp 0.8s;
+    }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px);} to { opacity: 1; transform: translateY(0);} }
+    .product-card h3 {
+      margin: 0 0 0.8rem 0;
+      color: var(--accent);
+      font-size: 1.3rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .product-card i {
+      color: var(--primary);
+      font-size: 1.3rem;
+    }
+    .uses-list {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.2rem;
+      font-size: 1rem;
+    }
+    /* Product Images Gallery */
+    .product-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.7rem;
+      margin: 1rem 0 1.2rem 0;
+      width: 100%;
+    }
+    .product-gallery img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      border-radius: 0.6rem;
+      box-shadow: 0 2px 8px #0000000e;
+      border: 2px solid #f0e9cc;
+      background: #f8f5f1;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .product-gallery img:hover {
+      transform: scale(1.04);
+      box-shadow: 0 2px 18px #00000022;
+      border-color: var(--secondary);
+    }
+    /* Explanation Section */
+    .explanation {
+      background: #fffbe9;
+      border-left: 6px solid var(--primary);
+      border-radius: 1rem;
+      padding: 1.3rem 1rem;
+      margin-bottom: 2rem;
+      font-size: 1.08rem;
+      box-shadow: 0 2px 8px #206c4911;
+    }
+    .explanation strong { color: var(--primary);}
+    .steps {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .step-card {
+      background: var(--white);
+      border-radius: 0.85rem;
+      box-shadow: var(--shadow);
+      flex: 1 1 140px;
+      min-width: 130px;
+      max-width: 180px;
+      padding: 1.2rem 0.7rem;
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      font-size: 0.97rem;
+      transition: transform 0.18s;
+      animation: fadeInUp 0.7s;
+    }
+    .step-card:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 2px 16px #00000014;
+    }
+    .step-icon {
+      font-size: 2rem;
+      margin-bottom: 0.4rem;
+      color: var(--primary);
+      background: #e0bf6e40;
+      border-radius: 50%;
+      width: 2.6rem;
+      height: 2.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .faqs details {
+      background: var(--white);
+      border-radius: 0.8rem;
+      box-shadow: var(--shadow);
+      margin-bottom: 1rem;
+      padding: 1rem 1.2rem;
+      font-size: 1.04rem;
+      transition: box-shadow 0.2s;
+    }
+    .faqs summary {
+      font-weight: bold;
+      cursor: pointer;
+      color: var(--primary);
+      outline: none;
+    }
+    .faqs details[open] { box-shadow: 0 4px 16px #206c4920;}
+    .quote-form-section {
+      background: var(--primary);
+      color: var(--white);
+      border-radius: 1.5rem;
+      margin-top: 2rem;
+      box-shadow: var(--shadow);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 2.5rem 1.5rem;
+      animation: fadeIn 0.7s;
+    }
+    .quote-form-section h2 {
+      margin-top: 0;
+      color: var(--secondary);
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .quote-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-top: 1.2rem;
+    }
+    .quote-form input, .quote-form select, .quote-form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      background: #f3f7ea;
+      color: #222;
+      font-family: inherit;
+    }
+    .quote-form textarea {
+      resize: vertical;
+      min-height: 70px;
+    }
+    .quote-form button {
+      background: var(--secondary);
+      color: var(--primary);
+      font-weight: 700;
+      padding: 0.9rem 1.2rem;
+      border: none;
+      border-radius: 2rem;
+      font-size: 1.09rem;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      transition: background 0.2s, color 0.2s;
+    }
+    .quote-form button:hover { background: var(--accent); color: var(--white);}
+    .form-success {
+      color: #d4ffb0;
+      background: #1f5d3d;
+      border-radius: 0.5rem;
+      padding: 0.7rem 1rem;
+      margin-top: 1rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    .form-error {
+      color: #ffb3b3;
+      background: #7b1f1f;
+      border-radius: 0.5rem;
+      padding: 0.6rem 0.9rem;
+      margin-top: 0.7rem;
+      font-weight: 600;
+      text-align: center;
+      display: none;
+    }
+    .testimonials {
+      margin-top: 2.5rem;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .testimonial-card {
+      background: var(--white);
+      color: var(--text);
+      border-radius: 1.1rem;
+      box-shadow: var(--shadow);
+      flex: 1 1 290px;
+      min-width: 220px;
+      padding: 1.5rem 1rem;
+      font-size: 1rem;
+      margin-bottom: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      animation: fadeInUp 0.8s;
+      border-left: 6px solid var(--accent);
+    }
+    .testimonial-card .client {
+      margin-top: 1.1rem;
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 1.05rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .testimonial-card .client i {
+      color: var(--secondary);
+      font-size: 1.1rem;
+    }
+    footer {
+      background: var(--primary);
+      color: var(--white);
+      text-align: center;
+      padding: 2.2rem 1.2rem 1rem 1.2rem;
+      margin-top: 3rem;
+      border-radius: 1.5rem 1.5rem 0 0;
+      font-size: 1.09rem;
+      animation: fadeIn 1.2s;
+    }
+    .footer-social {
+      margin: 1rem 0 0.7rem 0;
+      display: flex;
+      gap: 1.4rem;
+      justify-content: center;
+    }
+    .footer-social a {
+      color: var(--secondary);
+      font-size: 1.7rem;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-social a:hover { color: var(--white);}
+    #backToTop {
+      position: fixed;
+      bottom: 36px;
+      right: 24px;
+      z-index: 1001;
+      background: var(--secondary);
+      color: var(--primary);
+      border: none;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      font-size: 1.55rem;
+      box-shadow: 0 2px 12px #206c4920;
+      cursor: pointer;
+      opacity: 0.9;
+      display: none;
+      transition: background 0.2s, color 0.2s, opacity 0.2s;
+    }
+    #backToTop:hover { background: var(--accent); color: var(--white); opacity: 1;}
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 1.7rem;
+      }
+      .products {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .testimonials {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .steps {
+        flex-direction: column;
+        gap: 0.3rem;
+        align-items: center;
+      }
+      .product-gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 700px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.7rem 1rem;
+      }
+      .nav-links {
+        width: 100%;
+        flex-direction: column;
+        gap: 0.7rem;
+        background: var(--primary);
+        position: absolute;
+        left: 0;
+        top: 56px;
+        z-index: 9;
+        display: none;
+      }
+      .nav-links.open { display: flex;}
+      .menu-btn { display: block;}
+    }
+    @media (max-width: 500px) {
+      .hero-text h1 { font-size: 1.4rem;}
+      .section-title { font-size: 1.19rem;}
+      .hero-img svg { max-width: 120px;}
+      section, .quote-form-section { padding: 1.1rem 0.3rem;}
+      footer { padding: 1.1rem 0.3rem 0.7rem 0.3rem;}
+      #backToTop {
+        width: 38px;
+        height: 38px;
+        font-size: 1.2rem;
+        bottom: 16px;
+        right: 10px;
+      }
+      .product-gallery { grid-template-columns: 1fr;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <span class="logo">Debela Guye Mining</span>
+      <button class="menu-btn" aria-label="Open Menu"><i class="fas fa-bars"></i></button>
+      <div class="nav-links">
+        <a href="#products">Products</a>
+        <a href="#howitworks">How It Works</a>
+        <a href="#faq">FAQ</a>
+        <a href="#quote">Get a Quote</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <button id="backToTop" title="Back to Top" aria-label="Back to Top"><i class="fas fa-chevron-up"></i></button>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h1>Dolomite, Magnesite (MgCO₃) & MgO Supplier from Ethiopia</h1>
+        <p>
+          Unlocking the mineral riches of <b>Guji Zone, Ethiopia</b>. We supply high-grade <b>Dolomite</b>, <b>Magnesite (MgCO₃)</b>, and <b>Magnesium Oxide (MgO)</b> to industries worldwide—construction, agriculture, steel, ceramics, and more. Learn about our unique value chain and the advantages of sourcing both raw and processed minerals directly from the mine.
+        </p>
+        <a href="#quote"><button class="cta-btn" aria-label="Request a Quote">Request a Quote</button></a>
+      </div>
+      <div class="hero-img" aria-hidden="true">
+        <!-- SVG illustration -->
+        <svg viewBox="0 0 200 160" fill="none">
+          <ellipse cx="100" cy="140" rx="85" ry="18" fill="#e0bf6e" opacity="0.6"/>
+          <rect x="30" y="60" width="140" height="60" rx="18" fill="#206c49"/>
+          <ellipse cx="60" cy="110" rx="26" ry="14" fill="#f8f5f1"/>
+          <ellipse cx="145" cy="95" rx="25" ry="18" fill="#e0bf6e"/>
+          <ellipse cx="110" cy="120" rx="32" ry="10" fill="#fff" opacity="0.6"/>
+          <rect x="60" y="80" width="80" height="36" rx="10" fill="#e0bf6e" opacity="0.7"/>
+          <ellipse cx="100" cy="90" rx="16" ry="8" fill="#fff" opacity="0.4"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- EXPLANATION SECTION -->
+    <section class="explanation" aria-label="Transformation and Value of MgCO₃ and MgO">
+      <strong>Did you know?</strong> <br>
+      <b>Magnesium oxide (MgO)</b> is produced by calcining <b>magnesite (MgCO₃)</b> at high temperatures. Both <b>MgCO₃ (raw magnesite)</b> and <b>MgO</b> are available from our Ethiopian mines.
+      <ul>
+        <li>
+          <b>MgCO₃ (Magnesite):</b> The raw mineral, easier and less costly to ship in bulk.
+        </li>
+        <li>
+          <b>MgO (Magnesium Oxide):</b> A high-value processed material (from MgCO₃) used in refractories, agriculture, and industry. <b>However, exporting MgO involves higher energy and processing costs as well as increased shipping costs due to its higher density and value-add. For this reason, orders for MgO are best suited to buyers who require premium quality and can justify a higher value return.</b>
+        </li>
+      </ul>
+      <span style="color:#b38b01;"><b>For international buyers:</b> If your application requires raw magnesite (MgCO₃), you benefit from lower shipping costs. If you need processed MgO, you receive a ready-to-use, high-grade product, but the total delivered cost will be higher—so please ensure your project or process requires the full value of premium MgO.</span>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+      <div class="section-title">Our Products & Applications</div>
+      <div class="products">
+        <!-- Dolomite -->
+        <div class="product-card">
+          <h3><i class="fas fa-mountain"></i> Dolomite</h3>
+          <div class="product-gallery" aria-label="Gallery for Dolomite">
+            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Dolomite sample 1">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Dolomite sample 2">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=80" alt="Dolomite sample 3">
+          </div>
+          <div><b>Uses:</b></div>
+          <ul class="uses-list">
+            <li>Construction (cement, concrete, road base)</li>
+            <li>Agriculture (soil conditioner, fertilizer additive)</li>
+            <li>Steel production (flux for removing impurities)</li>
+            <li>Glass & ceramics industries</li>
+            <li>Environmental (water treatment, flue gas treatment) and so on.</li>
+          </ul>
+        </div>
+        <!-- MgO -->
+        <div class="product-card">
+          <h3><i class="fas fa-flask"></i> Magnesium Oxide (MgO)</h3>
+          <div class="product-gallery" aria-label="Gallery for MgO">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="Magnesium oxide sample 1">
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Magnesium oxide sample 2">
+            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80" alt="Magnesium oxide sample 3">
+          </div>
+          <div><b>Uses:</b></div>
+          <ul class="uses-list">
+            <li>Refractories (furnace, kiln linings)</li>
+            <li>Industrial (rubber, plastics, paints)</li>
+            <li>Agriculture (animal feed, fertilizer)</li>
+            <li>Pharmaceuticals & food</li>
+            <li>Environmental (neutralizing acidic waste)</li>
+          </ul>
+        </div>
+        <!-- MgCO3 -->
+        <div class="product-card">
+          <h3><i class="fas fa-cube"></i> Magnesite (MgCO₃)</h3>
+          <div class="product-gallery" aria-label="Gallery for Magnesite (MgCO3)">
+            <img src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?auto=format&fit=crop&w=400&q=80" alt="Magnesite sample 1">
+            <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a4b29?auto=format&fit=crop&w=400&q=80" alt="Magnesite sample 2">
+            <img src="https://images.unsplash.com/photo-1516910817561-ec7b2b5c6af7?auto=format&fit=crop&w=400&q=80" alt="Magnesite sample 3">
+          </div>
+          <div><b>Uses:</b></div>
+          <ul class="uses-list">
+            <li>Raw material for MgO production</li>
+            <li>Refractories</li>
+            <li>Industrial filler, ceramics, glass</li>
+            <li>Animal feed, agriculture</li>
+            <li>Environmental (water purification, CO₂ absorption)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="howitworks">
+      <div class="section-title">How Our Supply Service Works</div>
+      <div class="steps">
+        <div class="step-card">
+          <div class="step-icon"><i class="fas fa-file-signature"></i></div>
+          <div>1. Inquiry or order placement via our online form</div>
+        </div>
+        <div class="step-card">
+          <div class="step-icon"><i class="fas fa-comments-dollar"></i></div>
+          <div>2. Receive quotation (includes price, shipping & payment terms)</div>
+        </div>
+        <div class="step-card">
+          <div class="step-icon"><i class="fas fa-handshake"></i></div>
+          <div>3. Contract confirmation & secure payment</div>
+        </div>
+        <div class="step-card">
+          <div class="step-icon"><i class="fas fa-hard-hat"></i></div>
+          <div>4. Mining, processing & quality assurance</div>
+        </div>
+        <div class="step-card">
+          <div class="step-icon"><i class="fas fa-ship"></i></div>
+          <div>5. Shipping via trusted logistics partners</div>
+        </div>
+        <div class="step-card">
+          <div class="step-icon"><i class="fas fa-box-open"></i></div>
+          <div>6. Delivery & after-sales support</div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ Section -->
+    <section id="faq" class="faqs">
+      <div class="section-title">Frequently Asked Questions</div>
+      <details>
+        <summary>What are your payment terms?</summary>
+        <div>We accept international wire transfer, Letter of Credit (LC), and escrow for buyer security. All details are included in your pro-forma invoice.</div>
+      </details>
+      <details>
+        <summary>How is shipping handled?</summary>
+        <div>We ship via sea (preferred) or air with trusted logistics partners. You receive tracking and full documentation. Incoterms like FOB, CIF, and DAP are supported.</div>
+      </details>
+      <details>
+        <summary>Can you provide quality certificates or samples?</summary>
+        <div>Yes! Upon request, we share SGS/Lloyd’s certificates and can send mineral samples for lab testing before bulk orders.</div>
+      </details>
+      <details>
+        <summary>What is your supply capacity and lead time?</summary>
+        <div>We can supply large quantities monthly. Lead time varies by order size and destination but is typically 2-4 weeks after payment confirmation.</div>
+      </details>
+      <details>
+        <summary>Is your mining operation sustainable?</summary>
+        <div>We follow Ethiopian and international standards for environmental responsibility and community engagement.</div>
+      </details>
+    </section>
+    <!-- Quotation Form Section -->
+    <section id="quote" class="quote-form-section" aria-label="Get a Quote">
+      <h2>Request a Quote</h2>
+      <form class="quote-form" id="myQuoteForm" autocomplete="off" novalidate>
+        <input type="text" name="name" placeholder="Your Name" aria-label="Your Name" required>
+        <input type="text" name="company" placeholder="Company/Industry Name" aria-label="Company or Industry Name" required>
+        <select name="product" required aria-label="Select Product">
+          <option value="" disabled selected>Select Product</option>
+          <option value="Dolomite">Dolomite</option>
+          <option value="MgO">Magnesium Oxide (MgO)</option>
+          <option value="MgCO3">Magnesite (MgCO₃)</option>
+        </select>
+        <input type="text" name="quantity" placeholder="Quantity (e.g. tons)" aria-label="Quantity" required>
+        <input type="text" name="destination" placeholder="Destination Country/Port" aria-label="Destination Country or Port" required>
+        <input type="email" name="email" placeholder="Your Email" aria-label="Your Email" required>
+        <textarea name="requirements" placeholder="Special requirements or questions" aria-label="Special requirements or questions"></textarea>
+        <button type="submit">Send Quote Request</button>
+        <div id="formError" class="form-error"></div>
+        <div id="formSuccess" class="form-success" style="display:none;">Thank you! We will contact you soon.</div>
+      </form>
+    </section>
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+      <div class="section-title">What Our Clients Say</div>
+      <div class="testimonials">
+        <div class="testimonial-card">
+          “Debela Guye's dolomite quality exceeded our expectations. Timely shipment and great support throughout the process!”
+          <div class="client"><i class="fas fa-user-check"></i> Steel Manufacturer, India</div>
+        </div>
+        <div class="testimonial-card">
+          “We sourced MgO for our fertilizer plant and are very satisfied. Shipment was fast, and documentation was well prepared.”
+          <div class="client"><i class="fas fa-user-check"></i> AgroChem Corp., Germany</div>
+        </div>
+        <div class="testimonial-card">
+          “Professional, responsive and reliable. Highly recommended for international buyers.”
+          <div class="client"><i class="fas fa-user-check"></i> Global Trading Ltd., UAE</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="contact">
+    <div>
+      <b>Contact Us:</b> <br>
+      <a href="mailto:debelaguyemining@gmail.com" style="color:var(--secondary);text-decoration:underline;">debelaguyemining@gmail.com</a> <br>
+      Guji Zone, Oromia, Ethiopia <br>
+      Phone/WhatsApp: <a href="tel:+251900000000" style="color:var(--secondary);text-decoration:underline;">+251 900 000 000</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://wa.me/251900000000" title="WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="#" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:debelaguyemining@gmail.com" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div style="font-size:0.97rem;opacity:0.7;margin-top:0.7rem;">
+      &copy; 2025 Debela Guye Mining. All rights reserved.
+    </div>
+  </footer>
+  <script>
+    // Sticky navigation and mobile menu toggle
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    menuBtn.addEventListener('click', function() {
+      navLinks.classList.toggle('open');
+    });
+    // Highlight active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navItems = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let scrollY = window.pageYOffset;
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 80;
+        const sectionHeight = section.offsetHeight;
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+          navItems.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').slice(1) === section.id) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
+    });
+    // Smooth scroll for nav links
+    document.querySelectorAll('.nav-links a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href').slice(1);
+        const target = document.getElementById(targetId);
+        if (target) {
+          e.preventDefault();
+          window.scrollTo({top: target.offsetTop - 56, behavior: 'smooth'});
+          navLinks.classList.remove('open');
+        }
+      });
+    });
+    // Back to Top Button
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      backToTop.style.display = (window.pageYOffset > 320) ? 'block' : 'none';
+    });
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+    // Quotation form validation and fake submission
+    document.getElementById('myQuoteForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const form = this;
+      const errorDiv = document.getElementById('formError');
+      const successDiv = document.getElementById('formSuccess');
+      errorDiv.style.display = 'none';
+      successDiv.style.display = 'none';
+      // Simple validation
+      let valid = true;
+      let errorMsg = '';
+      if (!form.name.value.trim() || !form.company.value.trim() || !form.product.value || !form.quantity.value.trim() || !form.destination.value.trim() || !form.email.value.trim()) {
+        valid = false;
+        errorMsg = 'Please fill in all required fields.';
+      } else if (!/^[^@]+@[^@]+\.[^@]+$/.test(form.email.value.trim())) {
+        valid = false;
+        errorMsg = 'Please enter a valid email address.';
+      }
+      if (!valid) {
+        errorDiv.textContent = errorMsg;
+        errorDiv.style.display = 'block';
+        return;
+      }
+      // Simulate submission
+      successDiv.style.display = 'block';
+      setTimeout(() => {
+        successDiv.style.display = 'none';
+        form.reset();
+      }, 2800);
+    });
+    // Accessibility: Close nav menu on resize up
+    window.addEventListener('resize', () => {
+      if(window.innerWidth > 700) navLinks.classList.remove('open');
+    });
+  </script>
+</body>
+</html>
